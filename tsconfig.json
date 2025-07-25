@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "include": ["src/**/*"],
+  "compilerOptions": {
+    "lib": ["ES2023"],
+
+    // Output settings
+    "target": "ES2023",
+    "module": "Preserve",
+    "moduleDetection": "force",
+    "allowSyntheticDefaultImports": true,
+
+    // Don't emit anything by default, emit is done by `swc` during build
+    "noEmit": true,
+
+    // Settings
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "skipLibCheck": true,
+
+    "moduleResolution": "nodenext",
+    "esModuleInterop": true
+  }
+}

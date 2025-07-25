@@ -1,0 +1,49 @@
+{
+  "name": "ping-receiver",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Just receives some HTTP pings",
+  "type": "module",
+  "main": "./lib/server.js",
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "build": "swc --delete-dir-on-start --strip-leading-paths --out-dir lib/ src",
+    "dev": "tsx src/server.ts",
+    "start": "node lib/server.js"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "author": "Espen Hovlandsdal <espen@hovlandsdal.com>",
+  "homepage": "https://github.com/rexxars/ping-receiver#readme",
+  "bugs": {
+    "url": "https://github.com/rexxars/ping-receiver/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/rexxars/ping-receiver.git"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@eslint/js": "^9.30.1",
+    "@swc/cli": "^0.7.8",
+    "@swc/core": "^1.13.2",
+    "@types/node": "^22.16.5",
+    "@typescript-eslint/eslint-plugin": "^8.36.0",
+    "eslint": "^9.30.1",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-import-resolver-typescript": "^4.4.4",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-n": "^17.21.0",
+    "eslint-plugin-perfectionist": "^4.15.0",
+    "eslint-plugin-tsdoc": "^0.4.0",
+    "eslint-plugin-unicorn": "^56.0.1",
+    "eslint-plugin-unused-imports": "^4.1.4",
+    "prettier": "^3.5.3",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.36.0"
+  }
+}
