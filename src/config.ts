@@ -1,8 +1,8 @@
 export const config = {
-  host: process.env.HOST || '127.0.0.1',
-  port: intVar(process.env.PORT, 8080),
+  host: process.env.PING_HOST || '0.0.0.0',
+  port: intVar(process.env.PING_PORT, 8080),
 
-  knownPings: process.env.THINGS?.split(',').map((item) => item.trim()) || [],
+  knownPings: process.env.PING_THINGS?.split(',').map((item) => item.trim()) || [],
 }
 
 function intVar(value: string | undefined, defaultValue: number): number {
